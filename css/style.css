@@ -3,6 +3,7 @@
    padding: 0;
    box-sizing: border-box;
    background-color:rgb(170, 203, 231);
+   Font-family: Copperplate, Copperplate Gothic Light, fantasy, sans-serif;
 }
 body{
    margin: 0;
@@ -34,6 +35,19 @@ header nav img {
    margin-right: 80px;
 }
 /*INDEX*/
+
+@media only screen and (max-width: 500px) {
+   #box {
+      flex-direction: column;
+      max-width: 100%; 
+   }
+   .box_hija img {
+      width: 100%; 
+   }
+   .box_text {
+      padding: 10px; 
+   }
+}
 #box{
    height: auto;
    display: flex;
@@ -43,8 +57,9 @@ header nav img {
    flex: 1;
 }
 .box_hija img {
-   height: auto; /* Mantiene la proporción original de la imagen */
-   width: 200px; /* Establece un ancho fijo para la imagen */
+   height: auto; 
+   width: 200px; 
+   margin-right: 40px;
 }
 .box_text {
    flex: 1;
@@ -60,6 +75,15 @@ header {
    align-items:flex-end;
 }
 /*MENU*/
+@media only screen and (max-width: 600px) {
+   .menuentabla {
+      flex-direction: column; 
+      align-items: center; 
+      height: auto; 
+      position: static;
+   }
+}
+
 .elmenu{
    text-align: center;
 }
@@ -98,7 +122,7 @@ footer {
    flex-direction: column;
 }
 .footerLinks h2 {
-   margin: 0; /* Elimina el margen por defecto de los elementos h2 */
+   margin: 0; /* Elimina el margen de los elementos h2 */
 }
 /*CONTACTO*/
 #containerGrid {
@@ -112,7 +136,7 @@ footer {
    ;
 }
 .gridImg1{
-   grid-area: grisImg1;
+   grid-area: gridImg1;
    background-image: url(/imagenes/coctel\ 1.jpeg);
    background-size: cover;
 }
@@ -133,3 +157,24 @@ footer {
    background-size:cover;
    background-position: center;
 }
+/*RESERVA*/
+section {
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+   gap: 20px; 
+   align-items: center; 
+}
+
+.reserva {
+      max-width: 400px;
+      width: 100%; 
+      margin: auto; 
+      max-width: 400px;
+}
+
+.menuGriego {
+   max-width: 100%; 
+   height: auto; 
+   max-height: 400px;
+}
+
