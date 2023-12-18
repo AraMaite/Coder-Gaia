@@ -20,11 +20,15 @@
     margin-top: 60px;
  }
  /*MAIN DE LOS 4 HTML*/
- .Celeste{
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
+ .Celeste {
+   background: url(/imagenes/) center center fixed; /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta correcta de tu imagen */
+   background-size: cover;
+   height: 100vh; /* Ajusta la altura según tus necesidades */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: black; /* Cambia el color del texto para que sea legible en el fondo */
+}
  /*LISTA DE INICIO*/
  a, li {
     display: inline-block;
